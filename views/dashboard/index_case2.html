@@ -65,6 +65,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/static/css/dashboard.css" rel="stylesheet">
+    <link href="/static/bootstrap/css/navbars-offcanvas.css" rel="stylesheet">
 </head>
 <body>
 
@@ -73,10 +74,32 @@
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
-    <div class="navbar-nav">
-        <div class="nav-item text-nowrap">
-            <a class="nav-link px-3" href="#">Sign out</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">设置</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" data-bs-toggle="modal" data-bs-target="#mailSetModal" >邮件设置</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" data-bs-toggle="modal" data-bs-target="#testMailModal" >测试邮件发送</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" data-bs-toggle="modal" data-bs-target="#confModal" >查看配置</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">退出登录</a>
+                </li>
+            </ul>
+
         </div>
     </div>
 </header>

@@ -20,3 +20,7 @@ func Index2(c *gin.Context) {
 func Index3(c *gin.Context) {
 	c.HTML(http.StatusOK, "index_case3.html", gin.H{})
 }
+
+func Index4(c *gin.Context) {
+	c.HTML(http.StatusOK, "index_case4.html", gin.H{})
+}
