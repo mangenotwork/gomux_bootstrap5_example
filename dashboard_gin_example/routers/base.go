@@ -1,9 +1,9 @@
 package routers
 
 import (
+	"dashboard_gin_example/handler"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"website_gin_example/handler"
 )
 
 var Router *gin.Engine
@@ -23,12 +23,10 @@ func Routers() *gin.Engine {
 
 	Router.Delims("{[", "]}")
 
-	Router.LoadHTMLGlob("../views/website/*")
+	Router.LoadHTMLGlob("../views/dashboard/*")
 
 	Router.GET("/", handler.List)
 	Router.GET("/case1", handler.Index)
-	Router.GET("/case2", handler.Index2)
-	Router.GET("/case3", handler.Index3)
 
 	return Router
 }

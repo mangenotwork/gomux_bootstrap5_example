@@ -28,6 +28,7 @@ func Routers() *gin.Engine {
 	Router.GET("/", handler.List)
 	Router.GET("/case1", handler.Index)
 	Router.GET("/case2", handler.Index2)
+	Router.GET("/case3", handler.Index3)
 
 	return Router
 }
