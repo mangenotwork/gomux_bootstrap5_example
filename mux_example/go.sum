@@ -1,0 +1,4 @@
+github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
+github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/mangenotwork/common v0.0.0-20230807022126-60af77839362 h1:AnRrCs/Fdyr5sA/w8E9eXk8HjZrF/sOuerWb0uqACto=
+github.com/mangenotwork/common v0.0.0-20230807022126-60af77839362/go.mod h1:4DIcIStdrRVU8qzlRIxNC/Nuot4ar9T0iAYBg3Yugys=
